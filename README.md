@@ -1,22 +1,35 @@
 # RAS_Simulation_v6
-Multi-agent simulation of the Recursive Adaptive System (RAS). Compares firms with fixed adaptation rules against firms capable of recursive self-optimization under varying levels of environmental turbulence. Used in the paper "A Recursive Framework for the Market Epistemic Field and Collective Intelligence in Competitive Systems".
 
----
+Multi-agent simulation of the **Recursive Adaptive System (RAS)** for studying organizational adaptation in competitive, non-stationary environments.
 
-### How to Add It to GitHub
+This repository accompanies the paper:  
+**"A Recursive Framework for the Market Epistemic Field and Collective Intelligence in Competitive Systems"**
 
-1. Go to your repository: `https://github.com/[YourGitHubUsername]/RAS_Simulation_v6`
-2. Click on **"Add a README"** (or create a new file called `README.md`)
-3. Paste the content above
-4. Replace `[YourGitHubUsername]` with your actual GitHub username
-5. Commit the changes
+## Overview
 
----
+The simulation models firms as adaptive agents that maintain internal representations of a moving market state (proxy for the Idealized Market Epistemic Field). Each firm receives noisy private and collective signals and updates its internal model accordingly.
 
-Would you like me to adjust anything in the README? For example:
-- Make it shorter?
-- Add more technical details?
-- Include instructions for reproducing the exact figures from the paper?
-- Add a license section?
+Two types of agents are compared:
+- **Type A (Fixed Adaptation)**: Agents use constant adaptation parameters.
+- **Type B (Recursive Self-Optimization)**: Agents can adjust their adaptation rate and reliance on collective information based on recent performance.
 
-Just let me know.
+The model examines how recursive self-optimization affects epistemic distance and performance under different levels of environmental turbulence.
+
+## Features
+
+- Heterogeneous multi-agent environment
+- Private and collective (CIF-based) information signals
+- Recursive self-optimization mechanism
+- Configurable environmental turbulence (drift + shocks)
+- Batch runs with statistical output
+
+## Requirements
+
+- Python 3.8+
+- NumPy
+- Matplotlib (for visualization)
+
+Install dependencies:
+
+```bash
+pip install numpy matplotlib
