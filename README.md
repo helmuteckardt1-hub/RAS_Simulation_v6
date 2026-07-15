@@ -1,5 +1,5 @@
 # RAS_Simulation_v6
-
+[![DOI](https://zenodo.org/badge/1301898451.svg)](https://doi.org/10.5281/zenodo.21383874)
 Multi-agent simulation of the **Recursive Adaptive System (RAS)**. Compares agents using fixed adaptation rules against agents capable of recursive self-optimization under varying levels of environmental turbulence.
 
 This code accompanies the paper:  
